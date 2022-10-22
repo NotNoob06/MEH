@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(120deg, rgb(249, 200, 243) 30%, rgb(158, 195, 230));
+    background: linear-gradient(120deg, rgb(249, 200, 243) 30%, rgb(158, 195, 230)) no-repeat center center / auto;
+    background-attachment:fixed;
 } 
 
 
@@ -24,3 +25,12 @@ body {
 .cont > p {
     padding: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .title > h1 { 
+       font-size: 40px;
+       height: 80px;
+    }
+ 
+ }
