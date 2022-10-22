@@ -1,12 +1,3 @@
-/* body {
-    background-image: url("/img/mehbg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: auto;
-    max-width: 100%;
-} */
-
 body {
     /* background: url("/img/meh.png"), linear-gradient(120deg, rgb(249, 199, 243) 30%, rgb(157, 195, 230) 89%);
     background-repeat: no-repeat;
@@ -15,11 +6,17 @@ body {
     
     /* background-image: linear-gradient(120deg, rgb(249, 199, 243) 30%, rgb(157, 195, 230) 85%), url('/img/meh.png');
     background-size: cover, contain; */
-    background: url("/img/meh.png"), linear-gradient(120deg, rgb(249, 199, 243) 30%, rgb(157, 195, 230) 85%); /* W3C */
+    /* background-image: url("/img/meh.png"), linear-gradient(120deg, rgb(249, 199, 243) 30%, rgb(157, 195, 230) 85%); /* W3C
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
+    */
+
+    background: linear-gradient(120deg, rgba(249, 199, 243, 0.6) 30%, rgba(157, 195, 230, 0.6) 85%),
+                url('/img/meh.png') no-repeat center center / auto;
+
+    background-attachment: fixed
+} 
 
 
 .title h1 {
