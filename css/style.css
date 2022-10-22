@@ -8,11 +8,22 @@
 } */
 
 body {
-    background: url("/img/meh.png"), linear-gradient(120deg, rgb(249, 199, 243) 30%, rgb(157, 195, 230) 89%);
+    /* background: url("/img/meh.png"), linear-gradient(120deg, rgb(249, 199, 243) 30%, rgb(157, 195, 230) 89%);
     background-repeat: no-repeat;
     background-position: center;
+    background-size:unset; */
+    
+    /* background-image: linear-gradient(120deg, rgb(249, 199, 243) 30%, rgb(157, 195, 230) 85%), url('/img/meh.png');
+    background-size: cover, contain;
+    background-position: center,center;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed; */
+
+    background-image: url("/img/meh.png") ; /* fallback */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("/img/meh.png"), linear-gradient(120deg, rgb(249, 199, 243) 30%, rgb(157, 195, 230) 85%); /* W3C */
     background-attachment: fixed;
-    background-size:unset;
 }
 
 
