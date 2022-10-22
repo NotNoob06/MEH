@@ -8,7 +8,7 @@
 } */
 
 body {
-    background-image: url("/img/meh.png"),  linear-gradient(120deg, rgb(249, 199, 243) 30%, rgb(157, 195, 230) 89%);
+    background: url("/img/meh.png"), linear-gradient(120deg, rgb(249, 199, 243) 30%, rgb(157, 195, 230) 89%);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
