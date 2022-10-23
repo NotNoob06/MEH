@@ -367,4 +367,16 @@ a:visited {
        font-size: 20px;
        padding-left: 30%;
     }
+    .mycard2:before{
+        background: linear-gradient(rgba(255, 0, 0, 0.151), rgba(255, 0, 255, 0.253));
+    }
+    .mycard2:after{
+        background: linear-gradient(#2195f3b2, #e91e62b9);
+    }
+    .mycard3:before{
+        background: linear-gradient(rgba(255, 0, 0, 0.151), rgba(255, 0, 255, 0.253));
+    }
+    .mycard3:after{
+        background: linear-gradient(#2195f3b2, #e91e62b9);
+    }
 }
