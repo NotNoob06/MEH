@@ -359,4 +359,12 @@ a:visited {
     .mycard:after{
         background: linear-gradient(#2195f3b2, #e91e62b9);
     }
+    .mycard2 > .cardtext {
+        font-size: 30px;
+        padding-left: 45%;
+    }
+    .mycard2 > .cardcontent {
+       font-size: 20px;
+       padding-left: 30%;
+    }
 }
