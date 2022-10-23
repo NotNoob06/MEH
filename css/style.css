@@ -361,11 +361,11 @@ a:visited {
     }
     .mycard2 > .cardtext {
         font-size: 30px;
-        padding-left: 40%;
+        padding-left: 35%;
     }
     .mycard2 > .cardcontent {
        font-size: 20px;
-       padding-left: 30%;
+       padding-left: 25%;
     }
     .mycard2:before{
         background: linear-gradient(rgba(255, 0, 0, 0.151), rgba(255, 0, 255, 0.253));
