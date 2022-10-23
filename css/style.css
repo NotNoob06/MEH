@@ -52,6 +52,16 @@ body {
     width:fit-content;
     border-radius: 20px;
     padding: 10px;
+    transition: transform 1s;
+}
+
+a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+a:visited {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .mycard > .cardcontent {
@@ -62,11 +72,12 @@ body {
     z-index: 10;
 }
 
-.mycard > .cardcontent > p {
+.mycard > .cardcontent > p.ccontstyle {
     background: linear-gradient(rgba(72, 73, 73, 0.575), rgba(30, 35, 48, 0.562));
-    width:fit-content;
+    width: fit-content;
     border-radius: 20px;
     padding: 10px;
+    transition: transform 1s;
 }
 
 .mycard:before {
@@ -76,18 +87,39 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(255, 0, 0, 0.575), rgba(255, 0, 255, 0.562));
-    clip-path: circle(30% at right 70%);
+    clip-path: circle(30% at right 100%);
+    transition: clip-path 1s;
 }
 
 .mycard:after {
     content: '';
     position: absolute;
     top: 0; left: 0;
-    width: 50%;
+    width: 60%;
     height: 60%;
     background: linear-gradient(#2195f3b2, #e91e62b9);
-    clip-path: circle(20% at 10% 10%);
+    clip-path: circle(20% at 5% 30%);
+    transition: clip-path 1s;
 }
+/*===============ANIMATION=================*/
+
+.mycard:hover > .cardtext > .cardtextstyle {
+    box-shadow: 5px 5px 5px rgba(3, 3, 3, 0.534);
+    transform: rotate(5deg);
+}
+.mycard:hover > .cardcontent > p.ccontstyle {
+    box-shadow: 5px 5px 5px rgba(3, 3, 3, 0.534);
+    transform: rotate(-5deg);
+}
+
+.mycard:hover::before {
+    clip-path: circle(30% at 90% 100%);
+}
+
+.mycard:hover:after {
+    clip-path: circle(30% at 75% 1%);
+}
+
 /*=========================================*/
 
 @media only screen and (max-width: 600px) {
